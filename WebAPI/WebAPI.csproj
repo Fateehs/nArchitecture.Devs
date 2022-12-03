@@ -15,11 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Persistence\Persistence.csproj" />
+    <ProjectReference Include="..\src\corePackages\Core.CrossCuttingConcers\Core.CrossCuttingConcerns.csproj" />
   </ItemGroup>
 
 </Project>
