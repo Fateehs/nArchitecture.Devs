@@ -1,5 +1,5 @@
 ## nArchitecture.Devs 
-Kodlama.io bootcamp project. 
+Kodlama.io Senior C# camp project. 
 
 ## Project Description
 This project is being developed for learning purposes.
