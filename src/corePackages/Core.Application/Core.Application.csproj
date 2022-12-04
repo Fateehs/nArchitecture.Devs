@@ -24,4 +24,8 @@
     <Folder Include="Pipelines\Authorization\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="..\..\..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
 </Project>
