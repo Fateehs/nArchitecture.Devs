@@ -1,4 +1,6 @@
-﻿using Application.Features.ProgrammingLanguages.Commands;
+﻿using Application.Features.ProgrammingLanguages.Commands.Create;
+using Application.Features.ProgrammingLanguages.Commands.Delete;
+using Application.Features.ProgrammingLanguages.Commands.Update;
 using Application.Features.ProgrammingLanguages.Dtos;
 using Application.Features.ProgrammingLanguages.Models;
 using Application.Features.ProgrammingLanguages.Queries.GetByIdProgrammingLanguage;
