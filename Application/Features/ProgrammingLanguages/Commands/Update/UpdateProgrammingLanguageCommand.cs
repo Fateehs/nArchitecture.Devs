@@ -1,5 +1,5 @@
 ﻿using Application.Features.ProgrammingLanguages.Dtos;
-using Application.Services;
+using Application.Services.Repositories;
 using AutoMapper;
 using Domain.Entities;
 using MediatR;

@@ -1,4 +1,4 @@
-﻿using Application.Services;
+﻿using Application.Services.Repositories;
 using Core.CrossCuttingConcerns.Exceptions;
 using Core.Persistence.Paging;
 using Domain.Entities;
