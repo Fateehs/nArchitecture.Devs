@@ -12,7 +12,7 @@ namespace Persistence.Migrations
 {
     [DbContext(typeof(BaseDbContext))]
     [Migration("20221205144633_Add-SubTechnology")]
-    partial class AddSubTechnology
+    partial class AddTechnology
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -4,12 +4,12 @@
 
 namespace Persistence.Migrations
 {
-    public partial class AddSubTechnology : Migration
+    public partial class AddTechnology : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "SubTechnologies",
+                name: "Technologies",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -19,9 +19,9 @@ namespace Persistence.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_SubTechnologies", x => x.Id);
+                    table.PrimaryKey("PK_Technologies", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_SubTechnologies_ProgrammingLanguages_ProgrammingLanguageId",
+                        name: "FK_Technologies_ProgrammingLanguages_ProgrammingLanguageId",
                         column: x => x.ProgrammingLanguageId,
                         principalTable: "ProgrammingLanguages",
                         principalColumn: "Id",
@@ -34,7 +34,7 @@ namespace Persistence.Migrations
                 values: new object[] { 4, "JavaScript" });
 
             migrationBuilder.InsertData(
-                table: "SubTechnologies",
+                table: "Technologies",
                 columns: new[] { "Id", "Name", "ProgrammingLanguageId" },
                 values: new object[,]
                 {
@@ -45,25 +45,25 @@ namespace Persistence.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "SubTechnologies",
+                table: "Technologies",
                 columns: new[] { "Id", "Name", "ProgrammingLanguageId" },
                 values: new object[] { 5, "Vue", 4 });
 
             migrationBuilder.InsertData(
-                table: "SubTechnologies",
+                table: "Technologies",
                 columns: new[] { "Id", "Name", "ProgrammingLanguageId" },
                 values: new object[] { 6, "React", 4 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_SubTechnologies_ProgrammingLanguageId",
-                table: "SubTechnologies",
+                name: "IX_Technologies_ProgrammingLanguageId",
+                table: "Technologies",
                 column: "ProgrammingLanguageId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "SubTechnologies");
+                name: "Technologies");
 
             migrationBuilder.DeleteData(
                 table: "ProgrammingLanguages",
